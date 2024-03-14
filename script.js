@@ -5,15 +5,23 @@ document.addEventListener('DOMContentLoaded', function() {
     var sendButton = contactForm.querySelector('.send-button');
     var closeButton = contactForm.querySelector('.close-button');
     var skillButton = document.querySelector('a[href="#skills"]')  
+
     var skills = document.getElementById('skills')
-    const toggleButton = document.getElementsByClassName('toggle-button') [0]
-    const navbarlinks = document.getElementsByClassName('nav-links') [0]
 
+
+    // Get the toggle button, navbar links, and any other necessary elements
+    const toggleButton = document.querySelector('.toggle-button');
+    const navbarLinks = document.querySelector('.nav-links');
+
+// Add an event listener to the toggle button
     toggleButton.addEventListener('click', () => {
-        navbarlinks.classList.toggle('active')
-    });
+    // Toggle the 'active' class on the navbar links
+    navbarLinks.classList.toggle('active');
+});
 
-   const navLinks = document.querySelectorAll('.nav_link');
+
+const navLinks = document.querySelectorAll('.nav_link');
+
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
