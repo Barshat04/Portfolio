@@ -1,3 +1,5 @@
+
+
 html, body{
     margin: 0;
     padding: 0;
@@ -101,7 +103,8 @@ nav a.active {
 }
 
 .fa-solid.fa-bars {
-    font-size: 25px;
+    font-size: 22px;
+    color: #fffffe;
 }
 
 .main {
@@ -220,7 +223,7 @@ h1 {
 
 .socials{
     position: absolute;
-    left: 75px;
+    left: 50px;
     margin-top: 150px;
     padding: 20px;
     font-size: 35px;
@@ -876,6 +879,8 @@ textarea {
 
     .toggle-button {
         display: flex;
+        background-color: transparent;
+        border: none;
     }
 
    
@@ -965,7 +970,7 @@ textarea {
     
     .collab-desc {
         /* Styles for collab description */
-        font-size: 0.9em;
+        font-size: 1em;
     }
     
     .convo-button {
@@ -1181,6 +1186,10 @@ textarea {
     .exp-images {
         /* Styles for exp images */
          
+    }
+
+    .coles-logo {
+        max-width: 200px !important;
     }
     
     #about {
