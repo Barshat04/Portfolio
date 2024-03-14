@@ -90,6 +90,20 @@ nav a.active {
     color: #eebbc3;
 }
 
+.toggle-button {
+    position: absolute;
+    top: .85rem;
+    right: 1rem;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fa-solid.fa-bars {
+    font-size: 25px;
+}
+
 .main {
     margin-top: 60px;
     
@@ -789,7 +803,7 @@ textarea {
 
 /* Media queries */
 /* Mobile Devices (up to 768px) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     /* Add your styles for mobile devices */
     
     body{
@@ -802,13 +816,21 @@ textarea {
         padding: 50px 0px;
         margin-bottom: 0px;
         margin-top: 0px;
+    
     }
+
+    .main {
+        margin: 0;
+    }
+
     .brand-name {
+        left: 20px;
         font-size: 16px; /* Further decrease font size for smaller screens */
     }
 
     .main h1 {
         font-size: 25px;
+        margin-left: 20px;
     }
 
     .baaz {
@@ -817,14 +839,34 @@ textarea {
 
     .desc {
         font-size: 16px;
+        margin-left: 20px;
+    }
+
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        width: 100%;
+        display: none;
+        
+    }
+
+    .nav-links.active {
+        display: flex;
     }
 
     .nav-links ul {
-        display: flex; /* Display nav links for smaller screens */
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
     }
 
     .nav-links li {
-        margin-right: 5px; /* Further decrease margin between nav items */
+        right: 0;
+        padding: 8px; /* Further decrease margin between nav items */
     }
 
     .nav-links li a {
@@ -832,7 +874,15 @@ textarea {
         padding: 3px; /* Further decrease padding for smaller screens */
     }
 
+    .toggle-button {
+        display: flex;
+    }
+
+   
+
     .socials {
+        left: 20px;
+        padding: 0;
         display: block; /* Display social icons for smaller screens */
         
     }
@@ -840,7 +890,16 @@ textarea {
     .socials i {
         font-size: 20px; /* Adjust font size for smaller screens */
     }
+
+    .image img {
+        display: flex;
+
+    }
+
     .author-photo{
+        position: absolute;
+        margin-left: 20px;
+        top: 260px;
         height: 200px;
         width: 200px;
     }
@@ -851,6 +910,9 @@ textarea {
     
     .downloadCV {
         /* Styles for downloadCV */
+        position: relative;
+        margin-top: 350px;
+        margin-left: 20px;
     }
     
     .downloadCV:hover {
@@ -875,10 +937,12 @@ textarea {
     
     .socials {
         /* Styles for socials */
+        margin-top: 10px;
     }
     
     .socials i {
         /* Styles for social icons */
+        font-size: 26px;
     }
     
     .collab {

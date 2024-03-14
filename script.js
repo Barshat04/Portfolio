@@ -6,6 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
     var closeButton = contactForm.querySelector('.close-button');
     var skillButton = document.querySelector('a[href="#skills"]')  
     var skills = document.getElementById('skills')
+    const toggleButton = document.getElementsByClassName('toggle-button') [0]
+    const navbarlinks = document.getElementsByClassName('nav-links') [0]
+
+    toggleButton.addEventListener('click', () => {
+        navbarlinks.classList.toggle('active')
+    });
 
    const navLinks = document.querySelectorAll('.nav_link');
 
