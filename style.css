@@ -1,3 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Michroma);
+
 
 
 html, body{
@@ -114,6 +120,7 @@ nav a.active {
 
 h1 {
     font-size: 55px;
+    font-weight: 900;
 }
 
 .main h1,  .desc {
@@ -123,6 +130,7 @@ h1 {
     top: 70px;
     margin-left: 70px;
     padding: 0;
+    font-weight: 800;
 }
 
 .main h1 {
@@ -970,7 +978,7 @@ textarea {
     
     .collab-desc {
         /* Styles for collab description */
-        font-size: 1em;
+        font-size: 1.2em;
     }
     
     .convo-button {
@@ -1272,7 +1280,7 @@ textarea {
         margin-top: 5px;
         padding: 0px;
         position: absolute;
-        margin-left: px;
+        margin-left: 70px;
         top: 300px;
         height: 300px;
         max-width: 300px;
@@ -1322,7 +1330,7 @@ textarea {
     
     .collab-desc {
         /* Styles for collab description */
-        font-size: 0.9em;
+        font-size: 1.2em;
     }
     
     .convo-button {
