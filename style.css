@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
-@import url(https://fonts.googleapis.com/css?family=Poppins);
+@import url(https://fonts.googleapis.com/css2?family=Poppins);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Michroma);
 
 
@@ -22,8 +22,11 @@ body{
     background-color: #d4d8f0;
 }
 
-#skills, #experience, #about {
+#skills, #experience  {
     min-height: 100vh;
+}
+#about{
+    min-height: 50vh;
 }
 
 
@@ -621,6 +624,7 @@ textarea {
     padding-bottom: 10px;
     color: #041158;
     font-size: 35px;
+    font-weight: 700;
     font-family: montserrat, 'Courier New', Courier, monospace;
     
 }
@@ -810,6 +814,109 @@ textarea {
 .major {
     color: #fffffe;
 }
+/* footer styles */
+
+.footer {
+    background-color: #232946;
+    padding: 20px;
+    font-family: ubuntu, sans-serif;
+    font-size: 18px;
+}
+
+.footer h5 {
+    margin: 0;
+    margin-bottom: 10px;
+    color: #fffffe;
+}
+
+.footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+}
+
+.footer li {
+    margin-bottom: 5px;
+    color: #fffffe;
+}
+
+.footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #eebbc3;
+}
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+    background-color: #232946;
+    border: none;
+    box-shadow: none;
+}
+
+.footer .col-md-3 {
+    flex: 1 1 25%;
+    margin-right: 20px;
+    
+}
+.col-md-3 label {
+    color: #fffffe;
+}
+
+
+.col-md-3 ul li {
+    padding: 5px;
+    
+}
+
+.col-md-3 i {
+    font-size: 24px;
+    padding: 5px;
+}
+
+.col-md-3 input {
+    height: 40px;
+    width: 200px;
+    border: 1px solid #fffffe;
+    background-color: transparent;
+    color: #fffffe;
+    border-color:#fffffe ;
+    margin-right: 5px;
+}
+
+.col-md-3 .subscribe {
+    height: 40px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-family: ubuntu, sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.subscribe:hover {
+    background-color: #eebbc3;
+    color: #232946;
+    cursor: pointer;
+}
+
+.footer .col-md-3:last-child {
+    margin-right: 0;
+}
+
+.report-issue {
+    color: #fffffe
+}
+
+
+
+
 
 
 /* Media queries */
@@ -1229,6 +1336,11 @@ textarea {
     
     .major {
         /* Styles for major */
+    }
+
+    .footer .col-md-3 {
+        flex: 1 1 100%;
+        margin-right: 0;
     }
 }
 
