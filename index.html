@@ -32,7 +32,7 @@
     </nav>
 <section class="main">
     <h1> Hi, <br>I'm <span class="baaz">Barshat</span></h1>
-    <p class="desc">I am a second year <span class="blue-desc">IT student.</span>
+    <p class="desc">I am a second year <span class="blue-desc" title="Software development and Data analytics">IT student.</span>
     </p>
 </section>
     <button class="downloadCV"><a href="./assets/Barshat's Resume.pdf" download>Download CV</a> <i class="fa-solid fa-circle-arrow-down"></i></button>
@@ -90,20 +90,20 @@
 </div>
 
 
-<form action="" class="contact-form" autocomplete="off" hidden>
+<form action="https://formspree.io/f/xnqeybva" method="post" class="contact-form" autocomplete="off">
     <div class="input-box">
         <h2 class="input-box-title">Get in Touch</h2>
         <hr>
 
         <div class="input-field">
-            <label for="name" >Name:</label>
-            <input id="name" type="text" placeholder="Your name" autocomplete="off"/>
-            <div class="error-txt" hidden>Please  enter your name!</div>
+            <label for="name">Name:</label>
+            <input id="name" name="name" type="text" placeholder="Your name" autocomplete="off"/>
+            <div class="error-txt" hidden>Please enter your name!</div>
         </div>
         <div class="input-field">
-            <label for="Email">Email:</label>
-            <input id="email" type="Email" placeholder="example@email.com"  autocomplete="off"/>
-            <div class="error-txt" hidden>Please eneter your e-mail address</div>
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="email" placeholder="example@email.com" autocomplete="off"/>
+            <div class="error-txt" hidden>Please enter your e-mail address!</div>
         </div>
 
         <div class="select-field">
@@ -121,18 +121,17 @@
 
         <div class="textarea-field">
             <label for="info">Additional Information:</label>
-            <textarea name="info" id="info" cols="3" rows="5" placeholder="Message" ></textarea>
+            <textarea name="info" id="info" cols="3" rows="5" placeholder="Message"></textarea>
             <div class="error-txt" hidden>Please provide some information!</div>
         </div>
         <div class="formbuttons">
-        <button class="send-button">Send Message
-            <i class="fa-solid fa-paper-plane"></i></button>
-
-            <button class="close-button">Cancel</button>
+            <input class="send-button" value="Send Message" type="submit">
+            <button class="close-button" type="button">Cancel</button>
         </div>
+        
     </div>  
-
 </form>
+
 
 <section id="skills">
     <div class="row">
@@ -144,7 +143,9 @@
                     <i class="fa fa-laptop"></i>
                 </div>
                 <h3>Front-end</h3>
-                <p class="skills-desc">I am passionate about coding reusable and responsive wepages and web applications. I am still improving and learning to write neat and well documented code. I am working one some projects with small businesses and will be live soon !</p>
+                <p class="skills-desc">With a solid grasp of HTML and CSS, I excel in structuring and styling web pages for optimal user experience. I focus on creating layouts and refining visual elements to ensure clarity and precision. <br> <br>
+
+                While I continue to grow, I'm actively improving my JavaScript skills to enhance website interactivity and functionality. Through hands-on practice, I'm gaining proficiency in handling events, manipulating the DOM, and implementing JavaScript frameworks.</p>
                 <p class="title-tools">Tools I work with:</p>
                 <ul class="list-tools">
                     <li>HTML</li>
@@ -157,7 +158,7 @@
                     <i class="fa-regular fa-pen-to-square"></i>                
                 </div>
                 <h3>Design</h3>
-                <p class="skills-desc">I love to create attractive and responsive designs for webpages and web apps. Design has been my passion as I started as a junior graphics designer. I now am confident about my designing skills and currently learning to use Figma for UI/UX designing.</p><br>
+                <p class="skills-desc">Proficient in Photoshop and Illustrator, I specialize in creating captivating social media ads and designs. With an eye for detail and a focus on conveying brand messages effectively, I craft visually stunning graphics that drive engagement and leave a lasting impression. Committed to staying updated with the latest design trends, I strive to deliver high-quality visual solutions that elevate brands in the digital sphere.</p><br>
                 <p class="title-tools">Tools I work with:</p>
                 <ul class="list-tools">
                     <li>Adobe Photoshop</li>
@@ -170,7 +171,7 @@
                     <i class="fa fa-database"></i>
                 </div>
                 <h3>Database</h3>
-                <p class="skills-desc">While doing my bachelor degree, I grew interest in Database and data analytics and love to keep up with the skills every once in a while. I have dones some EDA and visualisations using Python's libraries such as matplotlib and seaborn.</p><br>
+                <p class="skills-desc">Proficient in MySQL and PHP, I manage databases and develop dynamic web applications. Additionally, I utilize Python and its libraries such as matplotlib, seaborn and numpy for data visualization and analysis, enhancing decision-making processes through insightful data-driven insights.</p><br>
                 <p class="title-tools">Tools I work with:</p>
                 <ul class="list-tools">
                     <li>Python</li>
@@ -192,15 +193,15 @@
             <li class="exp-list">UniSQ, Toowoomba</li>
             <li class="exp-duration">June 2024 - Current</li>
         </ul>
-        <p class="exp-desc">I am currently working at University of Southern Queensland(UniSQ), Toowoomba as an <span class="yellow-desc"> International Student Ambassador</span>. My major job responsibility is to create engaging contents through The Ambassador Platform and help International recruitment with future student queries via Oracle CRM.</p>
+        <p class="exp-desc">I am currently working at University of Southern Queensland(UniSQ), Toowoomba as an <span class="yellow-desc"> International Student Ambassador</span>. My major job responsibility is to create engaging contents which are posted through The Ambassador Platform and used by the University for marketing purposes. Additionally, I help International recruitment team at the University with answering future student queries along the via Oracle CRM. This has been a wonderful experience and has provided me an opportunity to give back to the UniSQ community and help future international students tranisition into Uni life.</p>
         <br>
         <br>
         <ul>
             <li class="exp-list">Coles, Toowoomba</li>
-            <li class="exp-duration">June 2024 - Current</li>
+            <li class="exp-duration">June 2024 - May 2025</li>
 
         </ul>
-        <p class="exp-desc"> I am also working as a Customer Service representative at <span class="red-desc">Coles Supermarket </span>. Here, I have learned valuable transferrable skills such as leadership, communication, customer focus, eye for detail, patience, delegation and being a team member.</p>
+        <p class="exp-desc"> I worked as a Customer Service representative at <span class="red-desc">Coles Supermarket </span>. Here, I have learned valuable transferrable skills such as leadership, communication, customer focus, eye for detail, patience, delegation and being a team member. This experience has made me confident to tackle problems and achieve tight deadlines or targets.</p>
         <br>
         <br>
 
@@ -230,7 +231,7 @@
         <h2 class="abt-title">About Me 
             <i class="fa-regular fa-lightbulb"></i>
         </h2>
-        <p class="abt-desc">Hello! My name is Barshat Acharya. I am an international student at UniSQ, Toowoomba currently pursuing <span class="uni">Bachelor of Information technology</span> majoring in <span class="major">Software development and AI and Data Science.</span> I have been exploring computers and technology since my secondary school. My interest in web development started back in 2018 when one of my senior at school shared an idea that we can build a whole website in notepad. Since, then I've had my career path clear to me - Web dev or nothing. I am nowhere near perfect but am constantly learning and evolving everyday. <br> <p class="abt-desc-other">When I am not on my laptop, I enjoy playing soccer, travelling and going to the gym.</p> </p>
+        <p class="abt-desc">Hello! My name is Barshat Acharya. I am an international student at UniSQ, Toowoomba currently pursuing <span class="uni">Bachelor of Information technology</span> majoring in <span class="major">Software development and AI and Data Science.</span> I have been exploring computers and technology since my secondary school. My interest in web development started back in 2018 when one of my senior at school shared an idea that we can build a whole website in notepad. Since, then I've had my career path clear to me - Web dev or nothing. I am nowhere near perfect but am constantly learning and evolving everyday. I hope to kickstart my professional career soon and if you are interested to offer me internships or a graduate job then ping me an <a href="mailto:barshatacharya902@gmail.com">email.</a><br> <p class="abt-desc-other">When I am not on my laptop, I enjoy playing soccer, travelling and going to the gym.</p> </p>
     </div>
 </section>
 
