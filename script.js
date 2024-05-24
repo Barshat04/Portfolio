@@ -2,7 +2,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     var collabButton = document.querySelector('.convo-button');
     var contactForm = document.querySelector('.contact-form');
-    var sendButton = contactForm.querySelector('.send-button');
     var closeButton = contactForm.querySelector('.close-button');
     var skillButton = document.querySelector('a[href="#skills"]')  
 
@@ -60,17 +59,18 @@ window.addEventListener('scroll', () => {
         contactForm.reset();
     });
 
-    sendButton.addEventListener('click', function(event) {
-        event.preventDefault();
+    contactForm.addEventListener('submit', function(event) {
         var nameInput = contactForm.querySelector('#name');
         var emailInput = contactForm.querySelector('#email');
         var infoInput = contactForm.querySelector('#info');
         var projectType = contactForm.querySelector('#project-type');
 
-       
+        var isValid = true;
+
         // Validate name field
         if (nameInput.value.trim() === '') {
             showError(nameInput);
+            isValid = false;
         } else {
             hideError(nameInput);
         }
@@ -78,36 +78,45 @@ window.addEventListener('scroll', () => {
         // Validate email field
         if (emailInput.value.trim() === '') {
             showError(emailInput);
+            isValid = false;
         } else {
             hideError(emailInput);
         }
 
+        // Validate info field
         if (infoInput.value.trim() === '') {
             showError(infoInput);
+            isValid = false;
         } else {
             hideError(infoInput);
         }
 
+        // Validate project type field
         if (projectType.value.trim() === '') {
             showError(projectType);
+            isValid = false;
         } else {
             hideError(projectType);
+        }
+
+        if (!isValid) {
+            event.preventDefault(); // Prevent form submission if validation fails
         }
     });
 
     // Function to show error message
     function showError(element) {
         var errorTxt = element.parentElement.querySelector('.error-txt');
-        errorTxt.hidden = false;
+        if (errorTxt) {
+            errorTxt.hidden = false;
+        }
     }
 
     // Function to hide error message
     function hideError(element) {
         var errorTxt = element.parentElement.querySelector('.error-txt');
-        errorTxt.hidden = true;
+        if (errorTxt) {
+            errorTxt.hidden = true;
+        }
     }
-
-   
-
-    
 });
