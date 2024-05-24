@@ -772,6 +772,11 @@ textarea {
     margin-bottom: 20px;
 }
 
+#about a {
+    text-decoration:underline;
+    color:#FF7C00;
+}
+
 .abt-content {
     background-color: #232946;
     padding: 50px 0px;
