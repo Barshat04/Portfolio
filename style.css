@@ -1306,7 +1306,13 @@ textarea {
     
     .exp-images {
         /* Styles for exp images */
+        justify-content: center;
          
+    }
+
+    .exp-images img {
+        padding: 10px;
+
     }
 
     .coles-logo {
